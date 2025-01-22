@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Lecture Notes Organizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Lecture Notes Organizer</h1>
+      <button id="toggleTheme">Toggle Dark Mode</button>
+    </header>
+    <main>
+      <div class="upload-section">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="processBtn">Process Image</button>
+      </div>
+      <div class="output-section">
+        <h2>Extracted Text</h2>
+        <textarea id="outputText"></textarea>
+        <input type="text" id="categoryInput" placeholder="Enter category (e.g., Math, Physics)">
+        <button id="saveBtn">Save Note</button>
+      </div>
+      <div class="notes-section">
+        <h2>Saved Notes</h2>
+        <input type="text" id="searchInput" placeholder="Search notes...">
+        <div id="notesContainer"></div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
